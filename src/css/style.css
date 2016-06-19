@@ -43,7 +43,7 @@ h1.title {
     right: 0;
     margin: auto;
     width: 100%;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 40px;
     color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.32);
@@ -114,7 +114,7 @@ h1.title {
     letter-spacing: -10px;
     color: #083258;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #pageTimer .fontstyle-b {
@@ -122,7 +122,7 @@ h1.title {
     color: #083258;
     line-height: 0px;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
