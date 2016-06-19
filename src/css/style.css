@@ -1,0 +1,217 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+/*Material Icons*/
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+h1.title {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 3;
+    text-align: center;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    font-weight: 100;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.32);
+}
+
+.nickname {
+    color: #7eb6cd;
+}
+
+#presentation, #instagram {
+    position: relative;
+}
+
+#presentation {
+    background: #78c3eb;
+    z-index: 2;
+    background-image: url("../img/bg-main.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+#card {
+    min-width: 960px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    max-width: 1620px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.card {
+    background: white;
+    display: flex;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card .p1, .card .p2 {
+    position: relative;
+    height: inherit;
+}
+
+.card .p1 {
+    width: 30%;
+    background-color: #00bcd4;
+}
+
+.card .p2 {
+    width: 70%;
+}
+
+#pageTimer {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#pageTimer .fontstyle-a {
+    font-size: 12em;
+    letter-spacing: -10px;
+    color: #083258;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+#pageTimer .fontstyle-b {
+    font-size: 2em;
+    color: #083258;
+    line-height: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#dots {
+    transform: rotate(180deg);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#dots .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px auto;
+}
+
+#dots .dot {
+    background: #00bcd4;
+}
+
+#dots .dot.remaining {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#dots .dot.active {
+    background: #00bcd4;
+    margin: -4px 4px;
+    width: 18px;
+    height: 18px;
+}
+
+#dots .dot.active:after, #dots .dot.active:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  opacity: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+#dots .dot.active:after {
+  animation: sonar 1.5s infinite 1s;
+  border: 2px solid rgba(0, 188, 212, .2);
+}
+#dots .dot.active:before {
+  animation: sonar 1.5s infinite 1.5s;
+  border: 2px solid rgba(0, 188, 212, .2);
+}
+@keyframes sonar {
+  0% { transform: scale(1); opacity: 0; }
+  50% { transform: scale(2); opacity: 1; }
+  100% { transform: scale(3); opacity: 0; }
+}
+
+#card .profile img {
+    object-fit: cover;
+    width: calc(100% + 1px);
+    height: inherit;
+}
+
+.timeline {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    bottom: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.flag {
+    width: 130px;
+    background-size: 100%;
+    height: 60px;
+    border-radius: 3px;
+    margin: 0 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    overflow: hidden;
+}
+
+.flag img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
