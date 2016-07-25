@@ -198,6 +198,7 @@ h1.title {
     position: absolute;
     left: 0;
     right: 0;
+    justify-content: center;
 }
 
 .flag {
